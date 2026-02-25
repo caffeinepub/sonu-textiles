@@ -1,0 +1,263 @@
+{
+  "kind": "coverage_report",
+  "version": "1.0",
+  "generatedAt": "2026-02-25T14:53:43.134Z",
+  "sources": {
+    "buildRequest": true,
+    "implementationPlan": true
+  },
+  "requirements": {
+    "total": 7,
+    "implemented": 7,
+    "items": [
+      {
+        "id": "REQ-1",
+        "summary": "Create a visually rich homepage for Sonu Textiles with a hero banner, business name, tagline in both Hindi and English, and navigation links to all sections (Clothing, Mehndi, About Us, Contact).",
+        "status": "implemented",
+        "plannedFiles": [
+          "frontend/src/App.tsx",
+          "frontend/src/components/Navbar.tsx",
+          "frontend/src/pages/Home.tsx",
+          "frontend/src/index.css",
+          "frontend/tailwind.config.js"
+        ],
+        "matchedFiles": [
+          "frontend/src/App.tsx",
+          "frontend/src/components/Navbar.tsx",
+          "frontend/src/pages/Home.tsx",
+          "frontend/src/index.css",
+          "frontend/tailwind.config.js"
+        ]
+      },
+      {
+        "id": "REQ-2",
+        "summary": "Implement a Clothing section displaying a product gallery with sample clothing items. Each item should show a name (Hindi + English), description, and price. Include an 'Order Now' button on each product that opens an order form.",
+        "status": "implemented",
+        "plannedFiles": [
+          "frontend/src/pages/Clothing.tsx",
+          "frontend/src/components/OrderForm.tsx",
+          "frontend/src/App.tsx"
+        ],
+        "matchedFiles": [
+          "frontend/src/pages/Clothing.tsx",
+          "frontend/src/components/OrderForm.tsx",
+          "frontend/src/App.tsx"
+        ]
+      },
+      {
+        "id": "REQ-3",
+        "summary": "Implement a Mehndi section with a design gallery (sample mehndi design images), a pricing/rates table in Hindi and English, and an appointment booking form.",
+        "status": "implemented",
+        "plannedFiles": [
+          "frontend/src/pages/Mehndi.tsx",
+          "frontend/src/components/AppointmentForm.tsx",
+          "frontend/src/App.tsx"
+        ],
+        "matchedFiles": [
+          "frontend/src/pages/Mehndi.tsx",
+          "frontend/src/components/AppointmentForm.tsx",
+          "frontend/src/App.tsx"
+        ]
+      },
+      {
+        "id": "REQ-4",
+        "summary": "Create an About Us page/section describing Sonu Textiles, its services (clothing and mehndi), and contact details. Content should be available in both Hindi and English.",
+        "status": "implemented",
+        "plannedFiles": [
+          "frontend/src/pages/AboutUs.tsx",
+          "frontend/src/App.tsx"
+        ],
+        "matchedFiles": [
+          "frontend/src/pages/AboutUs.tsx",
+          "frontend/src/App.tsx"
+        ]
+      },
+      {
+        "id": "REQ-5",
+        "summary": "Add a Contact Us section with a contact form collecting visitor name, phone number, email, and message. On submission, store the enquiry in the backend. Also display a phone number and location placeholder for the business.",
+        "status": "implemented",
+        "plannedFiles": [
+          "frontend/src/pages/Contact.tsx",
+          "frontend/src/App.tsx"
+        ],
+        "matchedFiles": [
+          "frontend/src/pages/Contact.tsx",
+          "frontend/src/App.tsx"
+        ]
+      },
+      {
+        "id": "REQ-6",
+        "summary": "Implement a language toggle button (Hindi / English) in the navigation bar that switches all UI text throughout the site between Hindi and English.",
+        "status": "implemented",
+        "plannedFiles": [
+          "frontend/src/context/LanguageContext.tsx",
+          "frontend/src/App.tsx",
+          "frontend/src/components/Navbar.tsx",
+          "frontend/src/utils/translations.ts",
+          "frontend/src/pages/Home.tsx",
+          "frontend/src/pages/Clothing.tsx",
+          "frontend/src/pages/Mehndi.tsx",
+          "frontend/src/pages/AboutUs.tsx",
+          "frontend/src/pages/Contact.tsx",
+          "frontend/src/components/OrderForm.tsx",
+          "frontend/src/components/AppointmentForm.tsx"
+        ],
+        "matchedFiles": [
+          "frontend/src/context/LanguageContext.tsx",
+          "frontend/src/App.tsx",
+          "frontend/src/components/Navbar.tsx",
+          "frontend/src/pages/Home.tsx",
+          "frontend/src/pages/Clothing.tsx",
+          "frontend/src/pages/Mehndi.tsx",
+          "frontend/src/pages/AboutUs.tsx",
+          "frontend/src/pages/Contact.tsx",
+          "frontend/src/components/OrderForm.tsx",
+          "frontend/src/components/AppointmentForm.tsx"
+        ]
+      },
+      {
+        "id": "REQ-7",
+        "summary": "Apply a warm, festive, and elegant visual theme to the website — using rich jewel tones such as deep red, gold, and ivory — inspired by traditional Indian textile and mehndi aesthetics. Use decorative typography, consistent spacing, and an overall look that feels premium yet welcoming for a local Indian business.",
+        "status": "implemented",
+        "plannedFiles": [
+          "frontend/src/index.css",
+          "frontend/tailwind.config.js",
+          "frontend/src/components/Navbar.tsx",
+          "frontend/src/pages/Home.tsx",
+          "frontend/src/pages/Clothing.tsx",
+          "frontend/src/pages/Mehndi.tsx",
+          "frontend/src/pages/AboutUs.tsx",
+          "frontend/src/pages/Contact.tsx"
+        ],
+        "matchedFiles": [
+          "frontend/src/index.css",
+          "frontend/tailwind.config.js",
+          "frontend/src/components/Navbar.tsx",
+          "frontend/src/pages/Home.tsx",
+          "frontend/src/pages/Clothing.tsx",
+          "frontend/src/pages/Mehndi.tsx",
+          "frontend/src/pages/AboutUs.tsx",
+          "frontend/src/pages/Contact.tsx"
+        ]
+      }
+    ]
+  },
+  "changedFiles": [
+    "backend/main.mo",
+    "build-request.json",
+    "build-template/Dockerfile",
+    "build-template/LICENSE",
+    "build-template/README.md",
+    "build-template/deploy.sh",
+    "build-template/icp.yaml",
+    "build-template/package.json",
+    "build-template/pnpm-lock.yaml",
+    "build-template/pnpm-workspace.yaml",
+    "build-template/scripts/prune-unused-images.js",
+    "build-template/scripts/resize-images.js",
+    "build-template/src/backend/canister.yaml",
+    "build-template/src/backend/system-idl/aaaaa-aa.did",
+    "build-template/src/frontend/canister.yaml",
+    "build-template/src/frontend/components.json",
+    "build-template/src/frontend/env.json",
+    "build-template/src/frontend/eslint-rules/no-bigint-in-query-keys.js",
+    "build-template/src/frontend/eslint-rules/require-internet-identity-provider.js",
+    "build-template/src/frontend/eslint.config.js",
+    "build-template/src/frontend/package.json",
+    "build-template/src/frontend/postcss.config.js",
+    "build-template/src/frontend/src/components/ui/accordion.tsx",
+    "build-template/src/frontend/src/components/ui/alert-dialog.tsx",
+    "build-template/src/frontend/src/components/ui/alert.tsx",
+    "build-template/src/frontend/src/components/ui/aspect-ratio.tsx",
+    "build-template/src/frontend/src/components/ui/avatar.tsx",
+    "build-template/src/frontend/src/components/ui/badge.tsx",
+    "build-template/src/frontend/src/components/ui/breadcrumb.tsx",
+    "build-template/src/frontend/src/components/ui/button.tsx",
+    "build-template/src/frontend/src/components/ui/calendar.tsx",
+    "build-template/src/frontend/src/components/ui/card.tsx",
+    "build-template/src/frontend/src/components/ui/carousel.tsx",
+    "build-template/src/frontend/src/components/ui/chart.tsx",
+    "build-template/src/frontend/src/components/ui/checkbox.tsx",
+    "build-template/src/frontend/src/components/ui/collapsible.tsx",
+    "build-template/src/frontend/src/components/ui/command.tsx",
+    "build-template/src/frontend/src/components/ui/context-menu.tsx",
+    "build-template/src/frontend/src/components/ui/dialog.tsx",
+    "build-template/src/frontend/src/components/ui/drawer.tsx",
+    "build-template/src/frontend/src/components/ui/dropdown-menu.tsx",
+    "build-template/src/frontend/src/components/ui/form.tsx",
+    "build-template/src/frontend/src/components/ui/hover-card.tsx",
+    "build-template/src/frontend/src/components/ui/input-otp.tsx",
+    "build-template/src/frontend/src/components/ui/input.tsx",
+    "build-template/src/frontend/src/components/ui/label.tsx",
+    "build-template/src/frontend/src/components/ui/menubar.tsx",
+    "build-template/src/frontend/src/components/ui/navigation-menu.tsx",
+    "build-template/src/frontend/src/components/ui/pagination.tsx",
+    "build-template/src/frontend/src/components/ui/popover.tsx",
+    "build-template/src/frontend/src/components/ui/progress.tsx",
+    "build-template/src/frontend/src/components/ui/radio-group.tsx",
+    "build-template/src/frontend/src/components/ui/resizable.tsx",
+    "build-template/src/frontend/src/components/ui/scroll-area.tsx",
+    "build-template/src/frontend/src/components/ui/select.tsx",
+    "build-template/src/frontend/src/components/ui/separator.tsx",
+    "build-template/src/frontend/src/components/ui/sheet.tsx",
+    "build-template/src/frontend/src/components/ui/sidebar.tsx",
+    "build-template/src/frontend/src/components/ui/skeleton.tsx",
+    "build-template/src/frontend/src/components/ui/slider.tsx",
+    "build-template/src/frontend/src/components/ui/sonner.tsx",
+    "build-template/src/frontend/src/components/ui/switch.tsx",
+    "build-template/src/frontend/src/components/ui/table.tsx",
+    "build-template/src/frontend/src/components/ui/tabs.tsx",
+    "build-template/src/frontend/src/components/ui/textarea.tsx",
+    "build-template/src/frontend/src/components/ui/toggle-group.tsx",
+    "build-template/src/frontend/src/components/ui/toggle.tsx",
+    "build-template/src/frontend/src/components/ui/tooltip.tsx",
+    "build-template/src/frontend/src/hooks/use-mobile.tsx",
+    "build-template/src/frontend/src/lib/utils.ts",
+    "build-template/src/frontend/tsconfig.json",
+    "build-template/src/frontend/vite.config.js",
+    "build-template/tsconfig.json",
+    "caffeine.lock.json",
+    "feature_evidence.json",
+    "frontend-file-summaries.txt",
+    "frontend-implementation-plan.json",
+    "frontend/index.css",
+    "frontend/index.html",
+    "frontend/public/assets/generated/clothing-1.dim_400x400.png",
+    "frontend/public/assets/generated/clothing-2.dim_400x400.png",
+    "frontend/public/assets/generated/clothing-3.dim_400x400.png",
+    "frontend/public/assets/generated/hero-banner.dim_1200x400.png",
+    "frontend/public/assets/generated/logo.dim_300x100.png",
+    "frontend/public/assets/generated/mehndi-design-1.dim_400x400.png",
+    "frontend/public/assets/generated/mehndi-design-2.dim_400x400.png",
+    "frontend/public/assets/generated/mehndi-design-3.dim_400x400.png",
+    "frontend/public/assets/generated/mehndi-design-4.dim_400x400.png",
+    "frontend/src/App.tsx",
+    "frontend/src/backend.d.ts",
+    "frontend/src/backend.ts",
+    "frontend/src/components/AppointmentForm.tsx",
+    "frontend/src/components/Footer.tsx",
+    "frontend/src/components/Navbar.tsx",
+    "frontend/src/components/OrderForm.tsx",
+    "frontend/src/config.ts",
+    "frontend/src/context/LanguageContext.tsx",
+    "frontend/src/declarations/backend.did.d.ts",
+    "frontend/src/declarations/backend.did.js",
+    "frontend/src/hooks/useActor.ts",
+    "frontend/src/hooks/useInternetIdentity.ts",
+    "frontend/src/hooks/useQueries.ts",
+    "frontend/src/index.css",
+    "frontend/src/main.tsx",
+    "frontend/src/pages/AboutUs.tsx",
+    "frontend/src/pages/Clothing.tsx",
+    "frontend/src/pages/Contact.tsx",
+    "frontend/src/pages/Home.tsx",
+    "frontend/src/pages/Mehndi.tsx",
+    "frontend/src/ui-summary.json",
+    "frontend/src/utils/StorageClient.ts",
+    "frontend/tailwind.config.js",
+    "project_state.json",
+    "scratch/component-selection.json",
+    "spec.md",
+    "spec_vs_diff_report.json"
+  ]
+}

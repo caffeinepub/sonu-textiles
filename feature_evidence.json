@@ -1,0 +1,157 @@
+{
+  "kind": "feature_evidence_report",
+  "features": [
+    {
+      "featureId": "feature-create-a-visually-rich-homepage-for-sonu-textiles-with-a-hero-banner-business-name-tagline-in-both-hindi-and-english-and-navigation-links-to-all-sections-clothing-mehndi-about-us-contact",
+      "featureTitle": "Create a visually rich homepage for Sonu Textiles with a hero banner, business name, tagline in both Hindi and English, and navigation links to all sections (Clothing, Mehndi, About Us, Contact).",
+      "files": [
+        "frontend/src/App.tsx",
+        "frontend/src/components/Navbar.tsx",
+        "frontend/src/index.css",
+        "frontend/src/pages/Home.tsx",
+        "frontend/tailwind.config.js"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-1"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-implement-a-clothing-section-displaying-a-product-gallery-with-sample-clothing-items-each-item-should-show-a-name-hindi-english-description-and-price-include-an-order-now-button-on-each-product-that-opens-an-order-form",
+      "featureTitle": "Implement a Clothing section displaying a product gallery with sample clothing items. Each item should show a name (Hindi + English), description, and price. Include an 'Order Now' button on each product that opens an order form.",
+      "files": [
+        "frontend/src/App.tsx",
+        "frontend/src/components/OrderForm.tsx",
+        "frontend/src/pages/Clothing.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-2"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-implement-a-mehndi-section-with-a-design-gallery-sample-mehndi-design-images-a-pricing-rates-table-in-hindi-and-english-and-an-appointment-booking-form",
+      "featureTitle": "Implement a Mehndi section with a design gallery (sample mehndi design images), a pricing/rates table in Hindi and English, and an appointment booking form.",
+      "files": [
+        "frontend/src/App.tsx",
+        "frontend/src/components/AppointmentForm.tsx",
+        "frontend/src/pages/Mehndi.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-3"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-create-an-about-us-page-section-describing-sonu-textiles-its-services-clothing-and-mehndi-and-contact-details-content-should-be-available-in-both-hindi-and-english",
+      "featureTitle": "Create an About Us page/section describing Sonu Textiles, its services (clothing and mehndi), and contact details. Content should be available in both Hindi and English.",
+      "files": [
+        "frontend/src/App.tsx",
+        "frontend/src/pages/AboutUs.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-4"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-add-a-contact-us-section-with-a-contact-form-collecting-visitor-name-phone-number-email-and-message-on-submission-store-the-enquiry-in-the-backend-also-display-a-phone-number-and-location-placeholder-for-the-business",
+      "featureTitle": "Add a Contact Us section with a contact form collecting visitor name, phone number, email, and message. On submission, store the enquiry in the backend. Also display a phone number and location placeholder for the business.",
+      "files": [
+        "frontend/src/App.tsx",
+        "frontend/src/pages/Contact.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-5"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-implement-a-language-toggle-button-hindi-english-in-the-navigation-bar-that-switches-all-ui-text-throughout-the-site-between-hindi-and-english",
+      "featureTitle": "Implement a language toggle button (Hindi / English) in the navigation bar that switches all UI text throughout the site between Hindi and English.",
+      "files": [
+        "frontend/src/App.tsx",
+        "frontend/src/components/AppointmentForm.tsx",
+        "frontend/src/components/Navbar.tsx",
+        "frontend/src/components/OrderForm.tsx",
+        "frontend/src/context/LanguageContext.tsx",
+        "frontend/src/pages/AboutUs.tsx",
+        "frontend/src/pages/Clothing.tsx",
+        "frontend/src/pages/Contact.tsx",
+        "frontend/src/pages/Home.tsx",
+        "frontend/src/pages/Mehndi.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-6"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-apply-a-warm-festive-and-elegant-visual-theme-to-the-website-using-rich-jewel-tones-such-as-deep-red-gold-and-ivory-inspired-by-traditional-indian-textile-and-mehndi-aesthetics-use-decorative-typography-consistent-spacing-and-an-overall-look-that-feels-premium-yet-welcoming-for-a-local-indian-business",
+      "featureTitle": "Apply a warm, festive, and elegant visual theme to the website — using rich jewel tones such as deep red, gold, and ivory — inspired by traditional Indian textile and mehndi aesthetics. Use decorative typography, consistent spacing, and an overall look that feels premium yet welcoming for a local Indian business.",
+      "files": [
+        "frontend/src/components/Navbar.tsx",
+        "frontend/src/index.css",
+        "frontend/src/pages/AboutUs.tsx",
+        "frontend/src/pages/Clothing.tsx",
+        "frontend/src/pages/Contact.tsx",
+        "frontend/src/pages/Home.tsx",
+        "frontend/src/pages/Mehndi.tsx",
+        "frontend/tailwind.config.js"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-7"
+      ],
+      "confidence": "high"
+    }
+  ]
+}

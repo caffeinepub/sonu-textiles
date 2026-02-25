@@ -1,0 +1,16 @@
+{
+  "frontend/src/App.tsx": "Main app component with TanStack Router setup, layout component with Navbar/Footer/Outlet, and all five routes (Home, Clothing, Mehndi, About, Contact) wrapped in ThemeProvider and LanguageProvider.",
+  "frontend/src/context/LanguageContext.tsx": "Language context providing Hindi/English toggle with session storage persistence, useLanguage hook, and complete bilingual translation dictionaries for all UI strings.",
+  "frontend/src/hooks/useQueries.ts": "React Query hooks for all backend operations — fetching clothing items, mehndi designs, business info, and mutations for submitting contact messages, appointments, and orders.",
+  "frontend/src/components/Navbar.tsx": "Sticky navigation bar with Sonu Textiles logo/branding, bilingual nav links, language toggle button, and responsive mobile hamburger menu in deep crimson theme.",
+  "frontend/src/components/Footer.tsx": "Site footer with brand info, quick links, services list, copyright with dynamic year, and caffeine.ai attribution with UTM tracking.",
+  "frontend/src/pages/Home.tsx": "Homepage with hero banner, services grid (Clothing, Mehndi, Contact), \"Why Choose Us\" section in crimson, and a decorative image gallery preview.",
+  "frontend/src/pages/Clothing.tsx": "Clothing collection page fetching items from backend, displaying them in a responsive product grid with images, bilingual names, prices, and Order Now buttons that open the OrderForm modal.",
+  "frontend/src/components/OrderForm.tsx": "Modal order form collecting customer name, phone, and address for a selected clothing item, submitting via backend contact message mutation with success confirmation.",
+  "frontend/src/pages/Mehndi.tsx": "Mehndi page with design gallery grid (4 images with hover overlays), bilingual pricing table, and embedded AppointmentForm component.",
+  "frontend/src/components/AppointmentForm.tsx": "Appointment booking form collecting name, phone, date, time, and service type with a dropdown, submitting to backend and showing success confirmation.",
+  "frontend/src/pages/AboutUs.tsx": "About Us page with business story, clothing and mehndi service descriptions, mission statement, values grid, and decorative gallery images.",
+  "frontend/src/pages/Contact.tsx": "Contact page with a contact form (name, phone, email, message) submitting to backend, plus a sidebar showing business phone, location, and hours fetched from backend.",
+  "frontend/src/index.css": "Global styles with warm Indian color palette (crimson, gold, ivory) in OKLCH, Google Fonts imports for Playfair Display, Noto Sans Devanagari, and Inter, with font-display utility class.",
+  "frontend/tailwind.config.js": "Tailwind config with custom crimson, gold, and ivory color tokens, Playfair Display/Noto Sans Devanagari/Inter font families, and standard shadcn/ui theme extensions."
+}

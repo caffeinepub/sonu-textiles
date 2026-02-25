@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,800;1,400&family=Noto+Sans+Devanagari:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --radius: 0.375rem;
+
+    /* Warm Indian Palette — Deep Crimson, Gold, Ivory */
+    --background: 0.97 0.012 60;
+    --foreground: 0.18 0.025 30;
+
+    --card: 0.99 0.005 60;
+    --card-foreground: 0.18 0.025 30;
+
+    --popover: 0.99 0.005 60;
+    --popover-foreground: 0.18 0.025 30;
+
+    /* Deep Crimson Red */
+    --primary: 0.42 0.18 22;
+    --primary-foreground: 0.97 0.012 60;
+
+    /* Warm Ivory Secondary */
+    --secondary: 0.94 0.025 70;
+    --secondary-foreground: 0.42 0.18 22;
+
+    /* Muted warm tones */
+    --muted: 0.93 0.018 65;
+    --muted-foreground: 0.52 0.04 40;
+
+    /* Gold Accent */
+    --accent: 0.78 0.14 75;
+    --accent-foreground: 0.18 0.025 30;
+
+    --destructive: 0.577 0.245 27.325;
+    --destructive-foreground: 0.985 0 0;
+
+    --border: 0.88 0.03 60;
+    --input: 0.88 0.03 60;
+    --ring: 0.78 0.14 75;
+
+    --chart-1: 0.646 0.222 41.116;
+    --chart-2: 0.6 0.118 184.704;
+    --chart-3: 0.398 0.07 227.392;
+    --chart-4: 0.828 0.189 84.429;
+    --chart-5: 0.769 0.188 70.08;
+
+    --sidebar: 0.97 0.012 60;
+    --sidebar-foreground: 0.18 0.025 30;
+    --sidebar-primary: 0.42 0.18 22;
+    --sidebar-primary-foreground: 0.97 0.012 60;
+    --sidebar-accent: 0.94 0.025 70;
+    --sidebar-accent-foreground: 0.42 0.18 22;
+    --sidebar-border: 0.88 0.03 60;
+    --sidebar-ring: 0.78 0.14 75;
+  }
+
+  .dark {
+    --background: 0.14 0.025 25;
+    --foreground: 0.95 0.015 60;
+
+    --card: 0.18 0.03 25;
+    --card-foreground: 0.95 0.015 60;
+
+    --popover: 0.22 0.03 25;
+    --popover-foreground: 0.95 0.015 60;
+
+    --primary: 0.78 0.14 75;
+    --primary-foreground: 0.14 0.025 25;
+
+    --secondary: 0.25 0.04 30;
+    --secondary-foreground: 0.95 0.015 60;
+
+    --muted: 0.25 0.04 30;
+    --muted-foreground: 0.65 0.04 50;
+
+    --accent: 0.42 0.18 22;
+    --accent-foreground: 0.95 0.015 60;
+
+    --destructive: 0.704 0.191 22.216;
+    --destructive-foreground: 0.205 0 0;
+
+    --border: 1 0 0 / 10%;
+    --input: 1 0 0 / 15%;
+    --ring: 0.78 0.14 75;
+
+    --sidebar: 0.18 0.03 25;
+    --sidebar-foreground: 0.95 0.015 60;
+    --sidebar-primary: 0.78 0.14 75;
+    --sidebar-primary-foreground: 0.14 0.025 25;
+    --sidebar-accent: 0.25 0.04 30;
+    --sidebar-accent-foreground: 0.95 0.015 60;
+    --sidebar-border: 1 0 0 / 10%;
+    --sidebar-ring: 0.78 0.14 75;
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: 'Inter', 'Noto Sans Devanagari', sans-serif;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Playfair Display', 'Noto Sans Devanagari', serif;
+  }
+}
+
+@layer utilities {
+  .font-display {
+    font-family: 'Playfair Display', 'Noto Sans Devanagari', serif;
+  }
+  .font-devanagari {
+    font-family: 'Noto Sans Devanagari', sans-serif;
+  }
+}

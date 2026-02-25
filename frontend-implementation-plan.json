@@ -1,0 +1,262 @@
+{
+  "kind": "implementation_plan",
+  "version": "1.0",
+  "title": "Sonu Textiles Business Website - Frontend Implementation Plan",
+  "requirements": [
+    {
+      "id": "REQ-1",
+      "summary": "Create a visually rich homepage with hero banner, business name in Hindi and English, and navigation to all sections",
+      "acceptanceCriteria": [
+        "Business name 'Sonu Textiles / सोनू टेक्सटाइल्स' is prominently displayed",
+        "Navigation links to Clothing, Mehndi, About Us, and Contact sections are visible",
+        "Hero section contains both Hindi and English text",
+        "Page loads without errors"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/App.tsx",
+          "operation": "modify",
+          "description": "Add routing setup for Home, Clothing, Mehndi, About Us, and Contact sections. Configure the main application layout with navigation bar including language toggle placement."
+        },
+        {
+          "path": "frontend/src/components/Navbar.tsx",
+          "operation": "create",
+          "description": "Create navigation bar component with links to Clothing, Mehndi, About Us, and Contact sections. Include business name 'Sonu Textiles / सोनू टेक्सटाइल्स' and placeholder for language toggle button (to be wired in REQ-6)."
+        },
+        {
+          "path": "frontend/src/pages/Home.tsx",
+          "operation": "create",
+          "description": "Create homepage with hero section using the generated hero banner image at frontend/public/assets/generated/hero-banner.dim_1200x400.png. Display business name and tagline in both Hindi and English. Include brief introduction to clothing and mehndi services with call-to-action buttons linking to respective sections."
+        },
+        {
+          "path": "frontend/src/index.css",
+          "operation": "modify",
+          "description": "Apply warm, festive color palette using deep red, gold, and ivory tones as defined in REQ-7. Set up base typography styles suitable for both Hindi and English text. Ensure rich jewel tones are consistently applied."
+        },
+        {
+          "path": "frontend/tailwind.config.js",
+          "operation": "modify",
+          "description": "Configure Tailwind theme to include custom color palette with deep red, gold, and ivory as primary colors per REQ-7. Exclude blue and purple tones as per constraints. Configure font families suitable for bilingual content."
+        }
+      ]
+    },
+    {
+      "id": "REQ-2",
+      "summary": "Implement a Clothing section with product gallery, bilingual product details, and order form",
+      "acceptanceCriteria": [
+        "Clothing products are displayed in a responsive grid gallery",
+        "Each product card shows name in Hindi and English, price, and a description",
+        "Clicking 'Order Now' opens an order form modal or page",
+        "Order form collects customer name, phone number, address, and selected product",
+        "Order submission stores the order in the backend"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/pages/Clothing.tsx",
+          "operation": "create",
+          "description": "Create Clothing section page that fetches clothing items from backend using getClothingItemsByPrice(). Display products in a responsive grid gallery. Each product card shows name (Hindi + English), description, price, and 'Order Now' button. Wire generated clothing product images: frontend/public/assets/generated/clothing-1.dim_400x400.png, frontend/public/assets/generated/clothing-2.dim_400x400.png, frontend/public/assets/generated/clothing-3.dim_400x400.png as static assets for display."
+        },
+        {
+          "path": "frontend/src/components/OrderForm.tsx",
+          "operation": "create",
+          "description": "Create order form component (modal or page view) collecting customer name, phone number, address, and selected product. Include bilingual labels (Hindi + English). Handle form submission and validation. This component will be triggered from the 'Order Now' button in Clothing section."
+        },
+        {
+          "path": "frontend/src/App.tsx",
+          "operation": "modify",
+          "description": "Wire the Clothing page into the router and ensure navigation from Navbar links to /clothing route."
+        }
+      ]
+    },
+    {
+      "id": "REQ-3",
+      "summary": "Implement Mehndi section with design gallery, pricing table, and appointment booking form",
+      "acceptanceCriteria": [
+        "Mehndi design gallery displays at least 4 sample design images in a grid",
+        "Rates/pricing table is shown with service names and prices in both Hindi and English",
+        "Appointment booking form collects name, phone number, date, time, and service type",
+        "Submitted appointment bookings are stored in the backend",
+        "Confirmation message is shown after successful booking"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/pages/Mehndi.tsx",
+          "operation": "create",
+          "description": "Create Mehndi section page that fetches mehndi designs from backend using getMehndiDesignsByPrice(). Display design gallery in a responsive grid showing at least 4 design images. Wire generated mehndi design images: frontend/public/assets/generated/mehndi-design-1.dim_400x400.png, frontend/public/assets/generated/mehndi-design-2.dim_400x400.png, frontend/public/assets/generated/mehndi-design-3.dim_400x400.png, frontend/public/assets/generated/mehndi-design-4.dim_400x400.png. Include pricing/rates table with service names and prices in Hindi and English. Embed the AppointmentForm component."
+        },
+        {
+          "path": "frontend/src/components/AppointmentForm.tsx",
+          "operation": "create",
+          "description": "Create appointment booking form component collecting name, phone number, date, time, and service type. Use bilingual labels (Hindi + English). Handle form submission, validation, and display confirmation message on successful booking."
+        },
+        {
+          "path": "frontend/src/App.tsx",
+          "operation": "modify",
+          "description": "Wire the Mehndi page into the router and ensure navigation from Navbar links to /mehndi route."
+        }
+      ]
+    },
+    {
+      "id": "REQ-4",
+      "summary": "Create About Us section describing Sonu Textiles services in Hindi and English",
+      "acceptanceCriteria": [
+        "About Us section is accessible from the navigation",
+        "Section contains business description in both Hindi and English",
+        "Section mentions both clothing and mehndi services"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/pages/AboutUs.tsx",
+          "operation": "create",
+          "description": "Create About Us page/section with business description in Hindi and English. Describe Sonu Textiles, its clothing and mehndi services, and contact details. Use warm, elegant styling consistent with REQ-7 theme."
+        },
+        {
+          "path": "frontend/src/App.tsx",
+          "operation": "modify",
+          "description": "Wire the About Us page into the router and ensure navigation from Navbar links to /about route."
+        }
+      ]
+    },
+    {
+      "id": "REQ-5",
+      "summary": "Add Contact Us section with contact form and business contact details",
+      "acceptanceCriteria": [
+        "Contact form is present with fields: name, phone, email, message",
+        "Form submission stores the enquiry in the backend",
+        "A success message is displayed after submission",
+        "Business phone number and address placeholder are displayed alongside the form"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/pages/Contact.tsx",
+          "operation": "create",
+          "description": "Create Contact page with contact form collecting name, phone, email, and message. Use bilingual labels (Hindi + English). On submission, call backend submitContactMessage() method. Display success message after submission. Fetch and display business phone number and location using getBusinessInfo() backend method."
+        },
+        {
+          "path": "frontend/src/App.tsx",
+          "operation": "modify",
+          "description": "Wire the Contact page into the router and ensure navigation from Navbar links to /contact route."
+        }
+      ]
+    },
+    {
+      "id": "REQ-6",
+      "summary": "Implement language toggle button in navigation bar to switch between Hindi and English",
+      "acceptanceCriteria": [
+        "A language toggle button is visible in the navigation bar",
+        "Clicking the toggle switches all visible text between Hindi and English",
+        "Selected language preference persists during the session",
+        "All sections (Clothing, Mehndi, About Us, Contact, Home) respond to the toggle"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/context/LanguageContext.tsx",
+          "operation": "create",
+          "description": "Create LanguageContext providing language state (Hindi or English) and toggle function. Store selected language in session storage for persistence. Export LanguageProvider and useLanguage hook for consumption throughout the app."
+        },
+        {
+          "path": "frontend/src/App.tsx",
+          "operation": "modify",
+          "description": "Wrap the application with LanguageProvider from LanguageContext to enable language switching across all pages and components."
+        },
+        {
+          "path": "frontend/src/components/Navbar.tsx",
+          "operation": "modify",
+          "description": "Add language toggle button (Hindi / English) to the navigation bar. Wire the toggle to useLanguage hook from LanguageContext. Ensure the button is visible and functional."
+        },
+        {
+          "path": "frontend/src/utils/translations.ts",
+          "operation": "create",
+          "description": "Create translations utility containing all bilingual text strings for the application (navigation labels, form labels, headings, messages, etc.). Export translation objects keyed by language ('hi' for Hindi, 'en' for English) for use across all components."
+        },
+        {
+          "path": "frontend/src/pages/Home.tsx",
+          "operation": "modify",
+          "description": "Update Home page to use translations from translations.ts and respond to language context. Ensure business name, tagline, and all text elements display in the selected language."
+        },
+        {
+          "path": "frontend/src/pages/Clothing.tsx",
+          "operation": "modify",
+          "description": "Update Clothing page to use translations and language context. Display product names, descriptions, and form labels in the selected language."
+        },
+        {
+          "path": "frontend/src/pages/Mehndi.tsx",
+          "operation": "modify",
+          "description": "Update Mehndi page to use translations and language context. Display design names, pricing table, and form labels in the selected language."
+        },
+        {
+          "path": "frontend/src/pages/AboutUs.tsx",
+          "operation": "modify",
+          "description": "Update About Us page to use translations and language context. Display all business description text in the selected language."
+        },
+        {
+          "path": "frontend/src/pages/Contact.tsx",
+          "operation": "modify",
+          "description": "Update Contact page to use translations and language context. Display form labels, success messages, and contact details in the selected language."
+        },
+        {
+          "path": "frontend/src/components/OrderForm.tsx",
+          "operation": "modify",
+          "description": "Update OrderForm component to use translations and language context for all form labels and messages."
+        },
+        {
+          "path": "frontend/src/components/AppointmentForm.tsx",
+          "operation": "modify",
+          "description": "Update AppointmentForm component to use translations and language context for all form labels and messages."
+        }
+      ]
+    },
+    {
+      "id": "REQ-7",
+      "summary": "Apply warm, festive, elegant visual theme using rich jewel tones inspired by Indian textile and mehndi aesthetics",
+      "acceptanceCriteria": [
+        "Color palette uses warm, rich tones (e.g., deep red, gold, ivory) consistently across all sections",
+        "Typography feels elegant and readable in both Hindi and English",
+        "Visual style is consistent across all pages/sections",
+        "The design feels appropriate for a clothing and mehndi business"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/index.css",
+          "operation": "modify",
+          "description": "Refine global styles to ensure consistent application of warm, festive color palette (deep red, gold, ivory) across all components. Set elegant typography for both Hindi and English. Add decorative styling for headings and borders inspired by traditional Indian aesthetics."
+        },
+        {
+          "path": "frontend/tailwind.config.js",
+          "operation": "modify",
+          "description": "Finalize Tailwind configuration with custom color palette emphasizing deep red, gold, and ivory tones. Configure spacing, typography, and decorative utilities to achieve a premium yet welcoming aesthetic suitable for a traditional Indian business."
+        },
+        {
+          "path": "frontend/src/components/Navbar.tsx",
+          "operation": "modify",
+          "description": "Apply warm, elegant styling to the navigation bar consistent with REQ-7 theme. Use rich colors and decorative elements. Ensure the generated logo at frontend/public/assets/generated/logo.dim_300x100.png is displayed in the navbar."
+        },
+        {
+          "path": "frontend/src/pages/Home.tsx",
+          "operation": "modify",
+          "description": "Apply festive, elegant styling to the homepage hero section and content areas. Ensure hero banner image and all visual elements align with the warm jewel-tone color palette."
+        },
+        {
+          "path": "frontend/src/pages/Clothing.tsx",
+          "operation": "modify",
+          "description": "Apply consistent warm and elegant styling to the Clothing section. Ensure product cards, buttons, and layout reflect the premium aesthetic."
+        },
+        {
+          "path": "frontend/src/pages/Mehndi.tsx",
+          "operation": "modify",
+          "description": "Apply consistent warm and elegant styling to the Mehndi section. Ensure design gallery, pricing table, and form areas reflect the traditional Indian aesthetic."
+        },
+        {
+          "path": "frontend/src/pages/AboutUs.tsx",
+          "operation": "modify",
+          "description": "Apply consistent warm and elegant styling to the About Us section. Ensure text readability and visual harmony with the overall theme."
+        },
+        {
+          "path": "frontend/src/pages/Contact.tsx",
+          "operation": "modify",
+          "description": "Apply consistent warm and elegant styling to the Contact section. Ensure form styling and layout are visually cohesive with the rest of the site."
+        }
+      ]
+    }
+  ]
+}

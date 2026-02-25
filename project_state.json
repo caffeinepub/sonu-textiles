@@ -1,0 +1,97 @@
+{
+  "schemaVersion": "1.0.0",
+  "projectStateVersion": 3,
+  "summary": "Business website for Sonu Textiles covering clothing and mehndi services, with bilingual (Hindi + English) support, product gallery, online ordering, mehndi design gallery, appointment booking, rates info, contact form, and About Us page.",
+  "architectural_notes": [],
+  "known_issues": [],
+  "isFixRequest": false,
+  "imageRequirements": "## Required Images\n- Hero banner with traditional Indian textile fabric texture, rich red and gold colors, elegant decorative border patterns (hero-banner.dim_1200x400.png)\n- Mehndi design illustration — intricate henna hand pattern in warm brown tones on cream background (mehndi-design-1.dim_400x400.png)\n- Mehndi design illustration — floral and paisley henna pattern in warm brown tones (mehndi-design-2.dim_400x400.png)\n- Mehndi design illustration — geometric henna mandala pattern in deep brown (mehndi-design-3.dim_400x400.png)\n- Mehndi design illustration — bridal full-hand henna pattern in warm brown tones (mehndi-design-4.dim_400x400.png)\n- Clothing product image — colorful Indian ethnic kurta fabric displayed neatly (clothing-1.dim_400x400.png)\n- Clothing product image — vibrant Indian saree fabric with border design (clothing-2.dim_400x400.png)\n- Clothing product image — embroidered dupatta fabric in rich colors (clothing-3.dim_400x400.png)\n- Sonu Textiles logo — elegant text-based logo with fabric motif in gold and red tones (logo.dim_300x100.png)",
+  "existing_features": [
+    {
+      "id": "feature-create-a-visually-rich-homepage-for-sonu-textiles-with-a-hero-banner-business-name-tagline-in-both-hindi-and-english-and-navigation-links-to-all-sections-clothing-mehndi-about-us-contact",
+      "title": "Create a visually rich homepage for Sonu Textiles with a hero banner, business name, tagline in both Hindi and English, and navigation links to all sections (Clothing, Mehndi, About Us, Contact).",
+      "reqIds": [
+        "REQ-1"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-implement-a-clothing-section-displaying-a-product-gallery-with-sample-clothing-items-each-item-should-show-a-name-hindi-english-description-and-price-include-an-order-now-button-on-each-product-that-opens-an-order-form",
+      "title": "Implement a Clothing section displaying a product gallery with sample clothing items. Each item should show a name (Hindi + English), description, and price. Include an 'Order Now' button on each product that opens an order form.",
+      "reqIds": [
+        "REQ-2"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-implement-a-mehndi-section-with-a-design-gallery-sample-mehndi-design-images-a-pricing-rates-table-in-hindi-and-english-and-an-appointment-booking-form",
+      "title": "Implement a Mehndi section with a design gallery (sample mehndi design images), a pricing/rates table in Hindi and English, and an appointment booking form.",
+      "reqIds": [
+        "REQ-3"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-create-an-about-us-page-section-describing-sonu-textiles-its-services-clothing-and-mehndi-and-contact-details-content-should-be-available-in-both-hindi-and-english",
+      "title": "Create an About Us page/section describing Sonu Textiles, its services (clothing and mehndi), and contact details. Content should be available in both Hindi and English.",
+      "reqIds": [
+        "REQ-4"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-a-contact-us-section-with-a-contact-form-collecting-visitor-name-phone-number-email-and-message-on-submission-store-the-enquiry-in-the-backend-also-display-a-phone-number-and-location-placeholder-for-the-business",
+      "title": "Add a Contact Us section with a contact form collecting visitor name, phone number, email, and message. On submission, store the enquiry in the backend. Also display a phone number and location placeholder for the business.",
+      "reqIds": [
+        "REQ-5"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-implement-a-language-toggle-button-hindi-english-in-the-navigation-bar-that-switches-all-ui-text-throughout-the-site-between-hindi-and-english",
+      "title": "Implement a language toggle button (Hindi / English) in the navigation bar that switches all UI text throughout the site between Hindi and English.",
+      "reqIds": [
+        "REQ-6"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-apply-a-warm-festive-and-elegant-visual-theme-to-the-website-using-rich-jewel-tones-such-as-deep-red-gold-and-ivory-inspired-by-traditional-indian-textile-and-mehndi-aesthetics-use-decorative-typography-consistent-spacing-and-an-overall-look-that-feels-premium-yet-welcoming-for-a-local-indian-business",
+      "title": "Apply a warm, festive, and elegant visual theme to the website — using rich jewel tones such as deep red, gold, and ivory — inspired by traditional Indian textile and mehndi aesthetics. Use decorative typography, consistent spacing, and an overall look that feels premium yet welcoming for a local Indian business.",
+      "reqIds": [
+        "REQ-7"
+      ],
+      "version": 1
+    }
+  ],
+  "new_feature_requests": [
+    {
+      "id": "AR-1",
+      "summary": "Clothing section with product gallery and online ordering",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-2",
+      "summary": "Mehndi section with design gallery, appointment booking, and rates info",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-3",
+      "summary": "Contact form and About Us page",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-4",
+      "summary": "Bilingual support (Hindi and English) throughout the website",
+      "reqIds": [],
+      "status": "pending"
+    }
+  ],
+  "gameProjectType": "none",
+  "projectName": "Sonu Textiles",
+  "clarification_mode": "instant",
+  "clarification_rounds": 0
+}
